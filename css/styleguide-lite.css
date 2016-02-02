@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    padding: 40px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 60px;
+}
+
+.nav-left {
+    display: inline-block;
+    width: 400px;
+    max-width: 350px;
+    vertical-align: top;
+}
+
+.nav-left h2 {
+    position: absolute!important;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding: 0;
+    border: 0;
+}
+
+.nav-left li {
+    display: block;
+    padding: 5px 0
+}
+
+#main-content {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+#main-content:focus {
+    outline: none;
+}
+
+#main-content h3 {
+    margin-top: 40px;
+}
+
+.sample-container {
+    margin-bottom: 40px;
+}
