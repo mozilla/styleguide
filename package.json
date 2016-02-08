@@ -1,0 +1,17 @@
+{
+  "name": "Mozilla-Styleguide",
+  "version": "0.0.1",
+  "description": "A style guide for Mozilla branded websites",
+  "scripts": {
+    "test": "",
+    "start": "http-server -o"
+  },
+  "repository": "https://github.com/mozilla/styleguide",
+  "author": "Mozilla",
+  "license": "MPL2",
+  "dependencies": {},
+  "devDependencies": {
+      "http-server": "0.8.x"
+  },
+  "engine": "node >= 0.12.x"
+}
