@@ -1,7 +1,7 @@
 $(function() {
     var location = window.location.pathname;
     var sectionsPath = 'styleguide/';
-    var $container = $('#main-content');
+    var $container = $('.sg-main-content');
     var menuBar = $('nav');
     var initialSegment = '';
 

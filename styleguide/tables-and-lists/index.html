@@ -1,0 +1,154 @@
+<h2 class="sg-page-title">Tables and Lists</h2>
+
+<section id="table">
+  <h3>Tables</h3>
+  <p>Tables have no base styling in Sandstone (apart from the browser defaults).
+    Use the <code>.table</code> class to display tabular data with a bit more polish.</p>
+
+  <div class="sample-container">
+    <table class="table">
+      <caption>Table caption</caption>
+      <thead>
+        <tr>
+          <td></td>
+          <th scope="col">Column</th>
+          <th scope="col">Column</th>
+          <th scope="col">Column</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Row</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <th scope="row">Row</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <aside class="code-sample show">
+    <h4>HTML</h4>
+    <pre><code class="language-markup"></code></pre>
+  </aside>
+</section>
+
+<section id="ul">
+  <h3>Unordered lists</h3>
+  <div class="sample-container">
+    <ul>
+      <li>list item</li>
+      <li>list item
+        <ul>
+          <li>nested list</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <aside class="code-sample show">
+    <h4>HTML</h4>
+    <pre><code class="language-markup"></code></pre>
+  </aside>
+</section>
+
+<section id="ol">
+  <h3>Ordered lists</h3>
+  <div class="sample-container">
+    <ol>
+      <li>list item</li>
+      <li>list item
+        <ol>
+          <li>nested list</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+
+  <aside class="code-sample show">
+    <h4>HTML</h4>
+    <pre><code class="language-markup"></code></pre>
+  </aside>
+</section>
+
+<section id="unstyled">
+  <h3>Unstyled lists</h3>
+  <p>It’s often handy to use an ordered or unordered list in for semantic
+    markup while avoiding any default styling, either from the browser or
+    from Sandstone. Use the <code>.unstyled</code> class to override the
+    default styling. These list items have no markers or indentation.</p>
+
+  <div class="sample-container">
+    <ul class="unstyled">
+      <li>list item</li>
+      <li>list item</li>
+    </ul>
+  </div>
+
+  <aside class="code-sample show">
+    <h4>HTML</h4>
+    <pre><code class="language-markup"></code></pre>
+  </aside>
+</section>
+
+<section id="dl">
+  <h3>Definition lists</h3>
+  <p>Terms in standard definition lists recieve the same general styling as
+    top-level headings (<code>h1</code>). This doesn’t make a lot of sense
+    and is almost always undesirable, hence why it seems alternate styles
+    for definition lists were created over time. We should fix this in Sandstone,
+    but I’m documenting it here for now.</p>
+
+  <div class="sample-container">
+    <dl>
+      <dt>Term</dt>
+      <dd>Description</dd>
+    </dl>
+  </div>
+
+  <aside class="code-sample show">
+    <h4>HTML</h4>
+    <pre><code class="language-markup"></code></pre>
+  </aside>
+</section>
+
+<section id="dl-simple">
+  <h3>Definition lists, simple</h3>
+  <p>Simpler definition lists, with more reasonably sized terms. This should
+    probably be the base style for this element.</p>
+
+  <div class="sample-container">
+    <dl class="simple">
+      <dt>Term</dt>
+      <dd>Description</dd>
+    </dl>
+  </div>
+
+  <aside class="code-sample show">
+    <h4>HTML</h4>
+    <pre><code class="language-markup"></code></pre>
+  </aside>
+</section>
+
+<section id="dl=faq">
+  <h3>Frequently Asked Questions</h3>
+  <p>Lists of questions and their answers are marked up as a definition list.</p>
+
+  <div class="sample-container">
+    <dl class="faq">
+      <dt>Is this a question?</dt>
+      <dd>Yes. Yes it is.</dd>
+    </dl>
+  </div>
+
+  <aside class="code-sample show">
+    <h4>HTML</h4>
+    <pre><code class="language-markup"></code></pre>
+  </aside>
+</section>
