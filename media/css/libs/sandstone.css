@@ -98,37 +98,37 @@ a img {
 /*! updated 2015-06-17 */
 @font-face {
   font-family: 'Open Sans Light';
-  src: url('../../media/fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../../media/fonts/OpenSans-Light-webfont.woff') format('woff'), url('../../media/fonts/OpenSans-Light-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../../fonts/OpenSans-Light-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans Light';
-  src: url('../../media/fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../media/fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('../../media/fonts/OpenSans-Semibold-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('../../fonts/OpenSans-Semibold-webfont.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans Light';
-  src: url('../../media/fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../../media/fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('../../media/fonts/OpenSans-LightItalic-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('../../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('../../media/fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../media/fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../../media/fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('../../media/fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../media/fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../../media/fonts/OpenSans-Bold-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../../fonts/OpenSans-Bold-webfont.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Open Sans';
-  src: url('../../media/fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../../media/fonts/OpenSans-Italic-webfont.woff') format('woff'), url('../../media/fonts/OpenSans-Italic-webfont.ttf') format('truetype');
+  src: url('../../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../../fonts/OpenSans-Italic-webfont.woff') format('woff'), url('../../fonts/OpenSans-Italic-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -139,18 +139,18 @@ a img {
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('../../media/fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../media/fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
-         url('../../media/fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype');
+    src: url('../../fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/OpenSans-BoldItalic-webfont.woff') format('woff'),
+         url('../../fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Open Sans Extrabold';
-    src: url('../../media/fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix-2013') format('embedded-opentype'),
-         url('../../media/fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
-         url('../../media/fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype');
+    src: url('../../fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix-2013') format('embedded-opentype'),
+         url('../../fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'),
+         url('../../fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
@@ -738,7 +738,7 @@ html[lang^='en'] .button-flat-inverted {
   display: block;
   margin-right: -12px;
   padding: 0 30px 0 0;
-  background: url(../../media/img/sandstone/buttons/arrow-go-r.png) right center no-repeat;
+  background: url(../../img/sandstone/buttons/arrow-go-r.png) right center no-repeat;
 }
 .button-sand,
 .button-sand:link,
@@ -1043,7 +1043,7 @@ html[lang^='en'] .button-flat-inverted {
   color: #b8e779;
   margin-left: -54px;
   _margin-left: 0;
-  background: url(../../media/img/sandstone/buttons/firefox-large.png) 0 0 no-repeat;
+  background: url(../../img/sandstone/buttons/firefox-large.png) 0 0 no-repeat;
   _background-color: #659324;
   min-height: 82px;
   margin-bottom: -12px;
@@ -1093,7 +1093,7 @@ html[lang^='en'] .button-flat-inverted {
   _margin-left: 0;
   margin-top: -2px;
   margin-bottom: -7px;
-  background-image: url(../../media/img/sandstone/buttons/firefox-small.png);
+  background-image: url(../../img/sandstone/buttons/firefox-small.png);
   min-height: 45px;
   padding: 10px 20px 10px 73px;
   overflow: visible;
@@ -1163,16 +1163,16 @@ html[lang^='en'] .button-flat-inverted {
   letter-spacing: -0.01em;
 }
 .download-button-large.beta .download-link .download-content {
-  background-image: url(../../media/img/sandstone/buttons/beta-large.png);
+  background-image: url(../../img/sandstone/buttons/beta-large.png);
 }
 .download-button-small.beta .download-link .download-content {
-  background-image: url(../../media/img/sandstone/buttons/beta-small.png);
+  background-image: url(../../img/sandstone/buttons/beta-small.png);
 }
 .download-button-large.alpha .download-link .download-content {
-  background-image: url(../../media/img/sandstone/buttons/aurora-large.png);
+  background-image: url(../../img/sandstone/buttons/aurora-large.png);
 }
 .download-button-small.alpha .download-link .download-content {
-  background-image: url(../../media/img/sandstone/buttons/aurora-small.png);
+  background-image: url(../../img/sandstone/buttons/aurora-small.png);
 }
 .download-button.download-button-noicon .download-link {
   width: 250px;
@@ -1181,7 +1181,7 @@ html[lang^='en'] .button-flat-inverted {
 .download-button.download-button-noicon .download-link .download-content {
   margin-left: auto;
   padding-left: 55px;
-  background-image: url(../../media/img/sandstone/buttons/download-arrow.png);
+  background-image: url(../../img/sandstone/buttons/download-arrow.png);
   background-position: 15px 30px;
 }
 .download-button.download-button-noicon .download-link .download-subtitle {
@@ -1192,7 +1192,7 @@ html[lang^='en'] .button-flat-inverted {
   padding-top: 7px;
 }
 .download-button-small.download-button-noicon .download-link .download-content {
-  background-image: url(../../media/img/sandstone/buttons/download-arrow-small.png);
+  background-image: url(../../img/sandstone/buttons/download-arrow-small.png);
   background-position: 15px 18px;
 }
 .download-button-small.download-button-noicon .download-list .os_android .download-link .download-title span,
@@ -1536,7 +1536,7 @@ body {
 #outer-wrapper {
   position: relative;
   border-top: 2px solid #fff;
-  background: #f9f9f9 url(../../media/img/sandstone/bg-stone.png) 0 0 repeat-x;
+  background: #f9f9f9 url(../../img/sandstone/bg-stone.png) 0 0 repeat-x;
 }
 #wrapper {
   padding-bottom: 40px;
@@ -1567,12 +1567,12 @@ a.more:after {
   white-space: nowrap;
 }
 .sand #outer-wrapper {
-  background: #f5f1e8 url(../../media/img/sandstone/bg-gradient-sand.png) repeat-x;
-  background: url(../../media/img/sandstone/bg-gradient-sand.png) repeat-x, url(../../media/img/sandstone/bg-sand.png) repeat, #f5f1e8;
+  background: #f5f1e8 url(../../img/sandstone/bg-gradient-sand.png) repeat-x;
+  background: url(../../img/sandstone/bg-gradient-sand.png) repeat-x, url(../../img/sandstone/bg-sand.png) repeat, #f5f1e8;
 }
 .sky #outer-wrapper {
-  background: #eeeeee url(../../media/img/sandstone/bg-gradient-sky.png) repeat-x;
-  background: url(../../media/img/sandstone/bg-gradient-sky.png) repeat-x, url(../../media/img/sandstone/grain.png) repeat, #eeeeee;
+  background: #eeeeee url(../../img/sandstone/bg-gradient-sky.png) repeat-x;
+  background: url(../../img/sandstone/bg-gradient-sky.png) repeat-x, url(../../img/sandstone/grain.png) repeat, #eeeeee;
 }
 .sky a {
   color: #67a7d0;
@@ -1586,7 +1586,7 @@ a.more:after {
   color: #fff;
 }
 .space #outer-wrapper {
-  background: #04020b url(../../media/img/sandstone/bg-space.png) repeat-x;
+  background: #04020b url(../../img/sandstone/bg-space.png) repeat-x;
 }
 .space a {
   color: #2f8aca;
@@ -2149,7 +2149,7 @@ label.error {
 #masthead nav li .current {
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-image: url(../../media/img/sandstone/menu-current.png);
+  background-image: url(../../img/sandstone/menu-current.png);
 }
 #masthead nav li a,
 #masthead nav li a:link,
@@ -2206,7 +2206,7 @@ label.error {
   position: absolute;
   bottom: -40px;
   left: 0;
-  background: url(../../media/img/mission/title-banner-shadow.png) no-repeat;
+  background: url(../../img/mission/title-banner-shadow.png) no-repeat;
 }
 html[dir="rtl"] .title-shadow-box {
   float: right;
@@ -2516,13 +2516,13 @@ nav.menu-bar ul li:first-child a {
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  background-image: url('../../media/img/sandstone/footer-mozilla.png');
+  background-image: url('../../img/sandstone/footer-mozilla.png');
   width: 93px;
   height: 24px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   #colophon .logo a {
-    background-image: url("../../media/img/sandstone/footer-mozilla-high-res.png");
+    background-image: url("../../img/sandstone/footer-mozilla-high-res.png");
     -webkit-background-size: 93px 24px;
     background-size: 93px 24px;
   }
@@ -2727,7 +2727,7 @@ nav.menu-bar ul li:first-child a {
     width: 32px;
     height: 32px;
     /*margin: -3px 0 0 -3px;*/
-    background: no-repeat center top url(../../media/img/sandstone/icn-menu.png);
+    background: no-repeat center top url(../../img/sandstone/icn-menu.png);
     text-indent: -999em;
     overflow: hidden;
     cursor: pointer;
@@ -2886,7 +2886,7 @@ nav.menu-bar ul li:first-child a {
     margin: 0 -10px;
   }
   #nav-main #nav-main-menu a.submenu-item {
-    background: 94% 50% no-repeat url(../../media/img/sandstone/arrow-go.png);
+    background: 94% 50% no-repeat url(../../img/sandstone/arrow-go.png);
   }
   #nav-main #nav-main-menu a:hover,
   #nav-main #nav-main-menu a:focus,
@@ -2903,8 +2903,8 @@ nav.menu-bar ul li:first-child a {
   #nav-main #nav-main-menu a.submenu-item:hover,
   #nav-main #nav-main-menu a.submenu-item:focus,
   #nav-main #nav-main-menu a.submenu-item:active {
-    background-image: url(../../media/img/sandstone/arrow-go.png), -webkit-linear-gradient(top, #43a6e2, #247ac1);
-    background-image: url(../../media/img/sandstone/arrow-go.png), linear-gradient(to bottom, #43a6e2, #247ac1);
+    background-image: url(../../img/sandstone/arrow-go.png), -webkit-linear-gradient(top, #43a6e2, #247ac1);
+    background-image: url(../../img/sandstone/arrow-go.png), linear-gradient(to bottom, #43a6e2, #247ac1);
   }
   #nav-main #nav-main-menu li.first > a {
     border-radius: 10px 10px 0 0;
@@ -2937,7 +2937,7 @@ nav.menu-bar ul li:first-child a {
     display: block;
     width: 28px;
     height: 10px;
-    background: no-repeat url(../../media/img/sandstone/menu-point.png);
+    background: no-repeat url(../../img/sandstone/menu-point.png);
     position: absolute;
     left: 22px;
     top: -10px;
