@@ -1,0 +1,23 @@
+{
+  "name": "Mozilla-Styleguide",
+  "version": "0.0.2",
+  "description": "A style guide for Mozilla branded websites",
+  "scripts": {
+    "test": "",
+    "build-local": "html-compiler --rootFolder=styleguide --siteRoot=http://127.0.0.1:8080/dist && fsys --task=copy --filesFolders=media --destination=dist --clobber='false' --preserveTimestamps='false'",
+    "deploy": "html-compiler --rootFolder=styleguide --siteRoot=https://mozilla.github.io/styleguide && fsys --task=copy --filesFolders=media --destination=dist --clobber='false' --preserveTimestamps='false' && gh-pages -d dist",
+    "start": "watch 'npm run build-local' styleguide media & http-server -o"
+  },
+  "repository": "https://github.com/mozilla/styleguide",
+  "author": "Mozilla",
+  "license": "MPL-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "fs-extra-cli": "0.0.4",
+    "gh-pages": "^0.10.0",
+    "html-compiler": "0.0.8",
+    "http-server": "0.8.x",
+    "watch": "^0.17.1"
+  },
+  "engine": "node >= 0.12.x"
+}
