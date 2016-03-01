@@ -1,21 +1,49 @@
-<h2 class="sg-page-title">Components</h2>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Styleguide Lite</title>
+    #html-include=styleguide/includes/css.html
+  </head>
+  <body>
+    <div id="outer-wrapper">
+      <div id="wrapper">
+        <h1 class="sg-site-title">Styleguide Lite</h1>
 
-<section id="billboard">
-  <h3>Billboard</h3>
-  <p>A “billboard” is a styled box used as an emphasized callout, a related
-    sidebar, or otherwise distinctive block of content. The actual contents
-    of a billboard vary; this is just a generic style for a special box.</p>
+        #html-include=styleguide/includes/navigation.html
 
-  <div class="sample-container">
-    <aside class="billboard">
-      <h2>Look at me!</h2>
-      <p>I live in a box. I live on a one way street.</p>
-    </aside>
-  </div>
+        <main class="sg-main-content" role="main" tabindex="-1">
+          <h2 class="sg-page-title">Components</h2>
 
-  <aside class="code-sample show">
-    <h4>HTML</h4>
-    <pre><code class="language-markup"></code></pre>
-  </aside>
-</section>
+          <section id="billboard">
+            <h3>Billboard</h3>
+            <p>A “billboard” is a styled box used as an emphasized callout, a related
+              sidebar, or otherwise distinctive block of content. The actual contents
+              of a billboard vary; this is just a generic style for a special box.</p>
 
+            <div class="sample-container">
+              <aside class="billboard">
+                <h2>Look at me!</h2>
+                <p>I live in a box. I live on a one way street.</p>
+              </aside>
+            </div>
+
+            <aside class="code-sample">
+              <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;aside class="billboard">
+  &lt;h2>Look at me!&lt;/h2>
+  &lt;p>I live in a box. I live on a one way street.&lt;/p>
+&lt;/aside>
+</code>
+</pre>
+            </aside>
+          </section>
+        </main>
+      </div>
+      #html-include=styleguide/includes/footer.html
+    </div>
+    #html-include=styleguide/includes/js.html
+  </body>
+</html>

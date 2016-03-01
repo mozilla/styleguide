@@ -4,8 +4,7 @@ A style guide for Mozilla branded websites
 
 ## Getting started
 
-We are going to assume you want to contribute to this project so, first thing to do is to fork this
-project to your profile and then clone the project to your local machine.
+Before talking about adding new content, or updating existing content, let's get the styleguide running on your local machine. First step is to fork the main repository. Once completed, proceed to clone your fork to your local machine.
 
 ``` bash
 git clone git@github.com:yourusername/styleguide.git
@@ -25,42 +24,56 @@ npm install
 All content pages for the styleguide will reside in the `/styleguide` folder. These can be grouped
 into sub-folders under the root `/styleguide` folder, and can be as deeply nested as you require.
 
-The main container for the site resides at `/index.html` and, for the most part, you will never need
-to touch this file. This file then also provides the overall structure for the styleguide.
-
 To create a new page, create a new HTML file within one of the existing subdirectories or, create a
-new one if required. This file then only needs to contain the content for the section of the styleguide you are adding. For example:
+new one if needed. Use the following as your base template:
 
 ``` html
-<h2>Buttons</h2>
-<p>Buttons come in three varieties: download buttons, standard buttons and user flow buttons.</p>
-
-<h3>Download buttons</h3>
-<section class="sample-container">
-  <button class="button-green">download</button>
-</section>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Styleguide Lite</title>
+    #html-include=styleguide/includes/css.html
+  </head>
+  <body>
+    <div id="outer-wrapper">
+      <div id="wrapper">
+        <h1 class="sg-site-title">Styleguide Lite</h1>
+        #html-include=styleguide/includes/navigation.html
+        <main class="sg-main-content" role="main" tabindex="-1">
+          <h2>This is the landing page for now.</h2>
+        </main>
+      </div>
+      #html-include=styleguide/includes/footer.html
+    </div>
+    #html-include=styleguide/includes/js.html
+  </body>
+</html>
 ```
 
-Once you have created your page, you need to add a link to it. This is the only time you will need to edit the `/index.hml` file at the root of the project. When you open this file you will find a `ul` element containing all of the current links. Go ahead and add a link to your new page. For example:
+If you have added a new page, you need to add a link to it in `includes/navigation.html`.
 
 ``` html
-<li><a href="/styleguide/forms/index.html">Forms</a></li>
+<li><a href="#html-include-link=/grid/index.html">Grid</a></li>
 ```
 
-## Starting the server
+## Workflow
 
-In order to view the pages locally, you need to fire up a server. To do this, open up the terminal
-and the run the followig command from the root of the project.
+To make working on the styleguide as seamless as possible, there is a NPM script you should run that, starts a `watch` service against the `media` and `styleguide` folders, starts a local `http` server and opens you browser to the root of the project.
 
 ``` bash
 npm start
 ```
 
-This will then start a simple HTTP server and open your browser to the landing page of the styleguide. To stop the server, simply press Cmd/Ctrl + C in the terminal.
+NOTE: When the browser opens, it will show a directory listing of the folders in tour project, to preview the styleguide, click on the `dist` folder in the listing.
+
+From here on, any changes you make to files inside the `media` and `styleguide` folder, will cause the `watch` process to call `build-local`, which will re-generate the site into the dist folder. Refreshing the page will immediately show your changes.
+
+To stop the server, and watch service, simply press Ctrl + C in the terminal.
 
 ## Code exmaples
 
-To add code samples to a page, you can simply follow the below template:
+To add code samples to a page, you can simply follow the following template:
 
 ``` html
 <section class="sample-container">
@@ -68,11 +81,13 @@ To add code samples to a page, you can simply follow the below template:
 </section>
 
 <section class="code-sample show">
-<h4>HTML</h4>
+    <h4>HTML</h4>
 <pre>
-<code class="language-markup"></code>
+<code class="language-markup">
+&lt;a href="#" class="button-green">download&lt;/a>
+</code>
 </pre>
 </section>
 ```
 
-You need not add anything to the `code-sample` section as this will be injected with JavaScript. All you need to do is add the HTML for your live exmaple, inside the `sample-container` section.
+NOTE: You need to escape the opening brackets of any HTML element to avoid the code from being parsed and rendered. Also, there should be no unintentional indentation(white space) inside the `code` block, as this will be rendered. See `styleguide/buttons/index.html` for example usage.
