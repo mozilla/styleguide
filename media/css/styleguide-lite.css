@@ -67,12 +67,7 @@
     color: #999;
 }
 
-/* accordion styles */
-ul {
-    display: none;
-}
-
-ol li:target ul {
+.moz-accordion-header > a {
     display: block;
 }
 
