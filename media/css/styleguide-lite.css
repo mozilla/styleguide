@@ -67,6 +67,10 @@
     color: #999;
 }
 
+.moz-accordion-header > a {
+    display: block;
+}
+
 @media screen and (max-width: 440px) {
     .sg-nav-main,
     .sg-main-content {
