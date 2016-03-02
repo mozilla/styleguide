@@ -15,7 +15,7 @@
   "devDependencies": {
     "fs-extra-cli": "0.0.4",
     "gh-pages": "^0.10.0",
-    "html-compiler": "0.0.8",
+    "html-compiler": "0.0.9",
     "http-server": "0.8.x",
     "watch": "^0.17.1"
   },
