@@ -5,74 +5,74 @@
     <title>Styleguide Lite</title>
     #html-include=styleguide/includes/css.html
   </head>
-  <body>
-    <div id="outer-wrapper">
-      <div id="wrapper">
-        <h1 class="sg-site-title">Styleguide Lite</h1>
+  <body class="styleguide">
+    <header class="main-header">
+      <h1 class="site-title">Mozilla Styleguide</h1>
+    </header>
 
-        #html-include=styleguide/includes/navigation.html
+    #html-include=styleguide/includes/navigation.html
 
-        <main class="sg-main-content" role="main" tabindex="-1">
-          <h2 class="sg-page-title">Buttons</h2>
-          <p>Buttons come in three varieties: download buttons, standard buttons and user flow buttons.</p>
+    <main class="main-content" role="main" tabindex="-1">
+      <h2>Buttons</h2>
+      <p>Buttons come in three varieties: download buttons, standard buttons and user flow buttons.</p>
 
-          <section id="download">
-            <h3>Download buttons</h3>
-            <div class="sample-container">
-              <a href="#" class="button-green">download</a>
-            </div>
+      <section id="download">
+        <h3>Download buttons</h3>
+        <div class="sample-container">
+          <a href="#" class="button-green">download</a>
+        </div>
 
-            <div class="code-sample">
-              <h4>HTML</h4>
+        <div class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;a href="#" class="button-green">download&lt;/a>
 </code>
 </pre>
-            </div>
-          </section>
+        </div>
+      </section>
 
-          <section id="standard">
-          <h3>Standard buttons</h3>
+      <section id="standard">
+      <h3>Standard buttons</h3>
 
-            <div class="sample-container">
-              <button class="button">default</button>
-              <button class="button insensitive">insensitive</button>
-            </div>
+        <div class="sample-container">
+          <button class="button">default</button>
+          <button class="button insensitive">insensitive</button>
+        </div>
 
-            <div class="code-sample">
-              <h4>HTML</h4>
+        <div class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;button class="button">default&lt;/button>
 &lt;button class="button insensitive">insensitive&lt;/button>
 </code>
 </pre>
-            </div>
-          </section>
+        </div>
+      </section>
 
-          <section id="user-flow">
-            <h3>User flow buttons</h3>
+      <section id="user-flow">
+        <h3>User flow buttons</h3>
 
-            <div class="sample-container">
-              <button class="button">next</button>
-              <button class="button-negative">no</button>
-            </div>
+        <div class="sample-container">
+          <button class="button">next</button>
+          <button class="button-negative">no</button>
+        </div>
 
-            <div class="code-sample">
-              <h4>HTML</h4>
+        <div class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;button class="button">next&lt;/button>
 &lt;button class="button-negative">no&lt;/button>
 </code>
 </pre>
-            </div>
-          </section>
-        </main>
-      </div>
-      #html-include=styleguide/includes/footer.html
-    </div>
+        </div>
+      </section>
+    </main>
+
+    #html-include=styleguide/includes/footer.html
+
     #html-include=styleguide/includes/js.html
   </body>
 </html>
