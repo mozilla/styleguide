@@ -1,8 +1,10 @@
 (function() {
     var documentElement = document.documentElement;
-    var $nav = $('.sg-nav-main');
+    var $nav = $('.nav-main');
     var $nestedLists = $('ul', $nav);
     var $accordionHeaders = $('.moz-accordion-header', $nav);
+    var pathName = window.location.pathname;
+    var $activeNavLink = $('a[href*="' + pathName + '"]');
 
     // Add class to reflect javascript availability for CSS
     documentElement.className = documentElement.className.replace(/\bno-js\b/, 'js');
@@ -10,6 +12,24 @@
     $nestedLists.addClass('hidden').attr('aria-hidden', true);
     // set aria-expanded to false on all accordion headers
     $accordionHeaders.attr('aria-expanded', false);
+
+    /**
+     * Marks the current link as active in the navigation.
+     * Also expands the accordion if the active link is nested.
+     */
+    function setActiveLink() {
+        // set the current page's navigation link item to active
+        $activeNavLink.addClass('active');
+
+        // if the active link has a moz-accordion-header parent, we need to expand it.
+        var $accordionHeader = $activeNavLink.parents('.moz-accordion-header');
+        if ($accordionHeader.length > -1) {
+            var $activeNavLinkParent = $activeNavLink.parents('ul');
+
+            $accordionHeader.attr('aria-expanded', true);
+            $activeNavLinkParent.removeClass('hidden').attr('aria-hidden', false);
+        }
+    }
 
     // only handle clicks where the target is an link with a hash target
     $accordionHeaders.on('click', 'a[href^="#"]', function(event) {
@@ -29,5 +49,7 @@
         $this.parents('li').attr('aria-expanded', true);
     });
 
+    setActiveLink();
     Prism.highlightAll();
+
 })();

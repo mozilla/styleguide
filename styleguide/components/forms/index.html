@@ -5,183 +5,183 @@
     <title>Styleguide Lite</title>
     #html-include=styleguide/includes/css.html
   </head>
-  <body>
-    <div id="outer-wrapper">
-      <div id="wrapper">
-        <h1 class="sg-site-title">Styleguide Lite</h1>
+  <body class="styleguide">
+    <header class="main-header">
+      <h1 class="site-title">Mozilla Styleguide</h1>
+    </header>
 
-        #html-include=styleguide/includes/navigation.html
+    #html-include=styleguide/includes/navigation.html
 
-        <main class="sg-main-content" role="main" tabindex="-1">
-          <h2 class="sg-page-title">Forms</h2>
-          <p>Use meaningful markup like lists and paragrapgs to give forms a logical
-            structure. A form control should almost always be paired with a useful label.</p>
+    <main class="main-content" role="main" tabindex="-1">
+      <h2>Forms</h2>
+      <p>Use meaningful markup like lists and paragrapgs to give forms a logical
+        structure. A form control should almost always be paired with a useful label.</p>
 
-          <section id="text">
-            <h3>Text input</h3>
+      <section id="text">
+        <h3>Text input</h3>
 
-            <div class="sample-container">
-              <label for="text">Text</label>
-              <input type="text" name="text" id="text">
-            </div>
+        <div class="sample-container">
+          <label for="text">Text</label>
+          <input type="text" name="text" id="text">
+        </div>
 
-            <aside class="code-sample">
-              <h4>HTML</h4>
+        <aside class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;label for="text">Text&lt;/label>
 &lt;input type="text" name="text" id="text">
 </code>
 </pre>
-            </aside>
-          </section>
+        </aside>
+      </section>
 
-          <section id="text">
-            <h3>Input with placeholder</h3>
-            <p>Field placeholders should show an example of the expected input, such as
-              suggested search terms or a demonstration of a correctly formatted email address.
-              The <code>placeholder</code> attribute should <strong>not</strong> be used
-              as a substitute for a label.</p>
+      <section id="text">
+        <h3>Input with placeholder</h3>
+        <p>Field placeholders should show an example of the expected input, such as
+          suggested search terms or a demonstration of a correctly formatted email address.
+          The <code>placeholder</code> attribute should <strong>not</strong> be used
+          as a substitute for a label.</p>
 
-            <div class="sample-container">
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" placeholder="you@example.com">
-            </div>
+        <div class="sample-container">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="you@example.com">
+        </div>
 
-            <aside class="code-sample">
-              <h4>HTML</h4>
+        <aside class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;label for="email">E-mail&lt;/label>
 &lt;input type="email" name="email" id="email" placeholder="you@example.com">
 </code>
 </pre>
-            </aside>
-          </section>
+        </aside>
+      </section>
 
-          <section id="text">
-            <h3>Text area</h3>
+      <section id="text">
+        <h3>Text area</h3>
 
-            <div class="sample-container">
-              <label for="textarea">Text area</label>
-              <textarea name="textarea" id="textarea" row="4" cols="60"></textarea>
-            </div>
+        <div class="sample-container">
+          <label for="textarea">Text area</label>
+          <textarea name="textarea" id="textarea" row="4" cols="60"></textarea>
+        </div>
 
-            <aside class="code-sample">
-              <h4>HTML</h4>
+        <aside class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;label for="textarea">Text area&lt;/label>
 &lt;textarea name="textarea" id="textarea" row="4" cols="60">&lt;/textarea>
 </code>
 </pre>
-            </aside>
-          </section>
+        </aside>
+      </section>
 
-          <section id="radio">
-            <h3>Radio buttons</h3>
-            <p>Radio buttons represent a set of options where only one may be selected.</p>
+      <section id="radio">
+        <h3>Radio buttons</h3>
+        <p>Radio buttons represent a set of options where only one may be selected.</p>
 
-            <div class="sample-container">
-              <label for="radio1"><input type="radio" name="radio" id="radio1"> Radio one</label>
-              <label for="radio2"><input type="radio" name="radio" id="radio2"> Radio two</label>
-            </div>
+        <div class="sample-container">
+          <label for="radio1"><input type="radio" name="radio" id="radio1"> Radio one</label>
+          <label for="radio2"><input type="radio" name="radio" id="radio2"> Radio two</label>
+        </div>
 
-            <aside class="code-sample">
-              <h4>HTML</h4>
+        <aside class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;label for="radio1">&lt;input type="radio" name="radio" id="radio1"> Radio one&lt;/label>
 &lt;label for="radio2">&lt;input type="radio" name="radio" id="radio2"> Radio two&lt;/label>
 </code>
 </pre>
-            </aside>
-          </section>
+        </aside>
+      </section>
 
-          <section id="radio">
-            <h3>Checkboxes</h3>
-            <p>Checkboxes represent a set of options where multiple selections are allowed.</p>
+      <section id="radio">
+        <h3>Checkboxes</h3>
+        <p>Checkboxes represent a set of options where multiple selections are allowed.</p>
 
-            <p>Also use a checkbox for a binary choice (such as a yes or no question) rather
-              than two radio buttons. A radio button, once activated, cannot be
-              deactivated, whereas a single checkbox behaves as a switch to let a user
-              toggle between the two states (you can uncheck a checked checkbox).</p>
+        <p>Also use a checkbox for a binary choice (such as a yes or no question) rather
+          than two radio buttons. A radio button, once activated, cannot be
+          deactivated, whereas a single checkbox behaves as a switch to let a user
+          toggle between the two states (you can uncheck a checked checkbox).</p>
 
-            <div class="sample-container">
-              <label for="check"><input type="checkbox" name="check" id="check"> Checkbox</label>
-            </div>
+        <div class="sample-container">
+          <label for="check"><input type="checkbox" name="check" id="check"> Checkbox</label>
+        </div>
 
-            <aside class="code-sample">
-              <h4>HTML</h4>
+        <aside class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;label for="check">&lt;input type="checkbox" name="check" id="check"> Checkbox&lt;/label>
 </code>
 </pre>
-            </aside>
-          </section>
+        </aside>
+      </section>
 
-          <section id="select">
-            <h3>Select</h3>
+      <section id="select">
+        <h3>Select</h3>
 
-            <div class="sample-container">
-              <label for="select">Select</label>
-              <select name="select" id="select">
-                <option>Alpha</option>
-                <option>Beta</option>
-                <option>Gamma</option>
-              </select>
-            </div>
+        <div class="sample-container">
+          <label for="select">Select</label>
+          <select name="select" id="select">
+            <option>Alpha</option>
+            <option>Beta</option>
+            <option>Gamma</option>
+          </select>
+        </div>
 
-            <aside class="code-sample">
-              <h4>HTML</h4>
+        <aside class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;label for="select">Select&lt;/label>
 &lt;select name="select" id="select">
-  &lt;option>Alpha&lt;/option>
-  &lt;option>Beta&lt;/option>
-  &lt;option>Gamma&lt;/option>
+&lt;option>Alpha&lt;/option>
+&lt;option>Beta&lt;/option>
+&lt;option>Gamma&lt;/option>
 &lt;/select>
 </code>
 </pre>
-            </aside>
-          </section>
+        </aside>
+      </section>
 
-          <section id="fieldset">
-            <h3>Fieldset with legend</h3>
-            <p>Use <code>fieldset</code> to group related fields together. Include a
-              <code>legend</code> as a title.</p>
+      <section id="fieldset">
+        <h3>Fieldset with legend</h3>
+        <p>Use <code>fieldset</code> to group related fields together. Include a
+          <code>legend</code> as a title.</p>
 
-            <div class="sample-container">
-              <fieldset>
-                <legend>Your name</legend>
-                <p>
-                  <label for="name-given">Given name</label> <input type="text" id="name-given" name="givenname">
-                  <label for="name-family">Family name</label> <input type="text" id="name-family" name="familyname">
-                </p>
-              </fieldset>
-            </div>
+        <div class="sample-container">
+          <fieldset>
+            <legend>Your name</legend>
+            <p>
+              <label for="name-given">Given name</label> <input type="text" id="name-given" name="givenname">
+              <label for="name-family">Family name</label> <input type="text" id="name-family" name="familyname">
+            </p>
+          </fieldset>
+        </div>
 
-            <aside class="code-sample">
-              <h4>HTML</h4>
+        <aside class="code-sample">
+          <h4>HTML</h4>
 <pre>
 <code class="language-markup">
 &lt;fieldset>
-  &lt;legend>Your name&lt;/legend>
-  &lt;p>
-    &lt;label for="name-given">Given name&lt;/label> &lt;input type="text" id="name-given" name="givenname">
-    &lt;label for="name-family">Family name&lt;/label> &lt;input type="text" id="name-family" name="familyname">
-  &lt;/p>
+&lt;legend>Your name&lt;/legend>
+&lt;p>
+&lt;label for="name-given">Given name&lt;/label> &lt;input type="text" id="name-given" name="givenname">
+&lt;label for="name-family">Family name&lt;/label> &lt;input type="text" id="name-family" name="familyname">
+&lt;/p>
 &lt;/fieldset>
 </code>
 </pre>
-            </aside>
-          </section>
-        </main>
-      </div>
-      #html-include=styleguide/includes/footer.html
-    </div>
+        </aside>
+      </section>
+    </main>
+
+    #html-include=styleguide/includes/footer.html
+
     #html-include=styleguide/includes/js.html
   </body>
 </html>
