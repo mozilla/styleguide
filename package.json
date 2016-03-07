@@ -6,7 +6,7 @@
     "test": "",
     "build-local": "html-compiler --rootFolder=styleguide --siteRoot=http://127.0.0.1:8080/dist && fsys --task=copy --filesFolders=media --destination=dist --clobber='false' --preserveTimestamps='false'",
     "deploy": "html-compiler --rootFolder=styleguide --siteRoot=https://mozilla.github.io/styleguide && fsys --task=copy --filesFolders=media --destination=dist --clobber='false' --preserveTimestamps='false' && gh-pages -d dist",
-    "start": "watch 'npm run build-local' styleguide media & http-server -o"
+    "start": "http-server -o & watch 'npm run build-local' styleguide media"
   },
   "repository": "https://github.com/mozilla/styleguide",
   "author": "Mozilla",
