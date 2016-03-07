@@ -3,8 +3,7 @@
     var $nav = $('.nav-main');
     var $nestedLists = $('ul', $nav);
     var $accordionHeaders = $('.moz-accordion-header', $nav);
-    var pathName = window.location.pathname;
-    var $activeNavLink = $('a[href*="' + pathName + '"]');
+    var $activeNavLink = $('a[href="' + window.location.href + '"]');
 
     // Add class to reflect javascript availability for CSS
     documentElement.className = documentElement.className.replace(/\bno-js\b/, 'js');
