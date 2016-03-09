@@ -1,0 +1,41 @@
+/** color swatch styles */
+.color-swatches {
+    margin-top: 40px;
+    list-style: none;
+}
+.color-swatches li {
+    display: inline-block;
+    background-color: #edecec;
+    margin-right: 40px;
+    margin-left: 0;
+    padding: 20px 10px 5px 10px;
+    border: 1px solid #CECACA;
+    border-radius: 6px;
+    width: 250px;
+    vertical-align: top;
+}
+
+.color-swatches .color {
+    width: 230px;
+    height: 100px;
+    border: 10px solid #fff;
+}
+
+.color-swatches .moz-red {
+    background-color: #C13832;
+}
+
+.color-swatches .moz-sand {
+    background-color: #D7D3C8;
+}
+.color-swatches .moz-red-gradient {
+    background-image: linear-gradient(to bottom, #ea3b28, #c13832);
+}
+
+.color-swatches .moz-sand-gradient {
+    background-image: linear-gradient(to bottom, #f6f4ec, #d7d3c8)
+}
+
+.color-swatches .color-codes th {
+    padding: 10px 5px 10px 0;
+}
