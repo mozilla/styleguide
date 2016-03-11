@@ -1,0 +1,15 @@
+dependencies:
+  override:
+    - npm install
+
+deployment:
+  master:
+    branch: master
+    owner: mozilla
+    commands:
+        - npm run deploy
+
+general:
+    branches:
+        only:
+            - master
