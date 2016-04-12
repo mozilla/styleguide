@@ -16,7 +16,7 @@
   "dependencies": {},
   "devDependencies": {
     "gh-pages": "^0.10.0",
-    "html-compiler": "0.0.9",
+    "html-compiler": "0.1.0",
     "http-server": "0.8.x",
     "npm-run-all": "^1.5.1",
     "watch": "^0.17.1"
