@@ -1,0 +1,84 @@
+.color-swatches {
+    list-style: none;
+    margin: 0 0 40px;
+
+    .swatch {
+        display: inline-block;
+        margin: 0 20px 20px;
+        text-align: center;
+    }
+
+    @supports (display:grid) {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(240px, 1fr));
+        grid-gap: 40px;
+
+        .swatch {
+            display: block;
+            margin: 0;
+            padding: 0 10px;
+        }
+    }
+
+    .color {
+        border-radius: 100%;
+        border: 2px solid rgba(0, 0, 0, .1);
+        height: 160px;
+        width: 160px;
+        margin: 10px auto 20px;
+    }
+
+    .black {
+        background-color: #000;
+    }
+
+    .white {
+        background-color: #fff;
+    }
+
+    .color-brand-cyan {
+        background-color: $color-brand-cyan;
+    }
+
+    .color-brand-coral {
+        background-color: $color-brand-coral;
+    }
+
+    .color-brand-yellow {
+        background-color: $color-brand-yellow;
+    }
+
+    .color-brand-lilac {
+        background-color: $color-brand-lilac;
+    }
+
+    .color-brand-orange {
+        background-color: $color-brand-orange;
+    }
+
+    .color-brand-lime {
+        background-color: $color-brand-lime;
+    }
+
+    .color-brand-neonblue {
+        background-color: $color-brand-neonblue;
+    }
+
+    .color-brand-neonpink {
+        background-color: $color-brand-neonpink;
+    }
+
+    .color-brand-neongreen {
+        background-color: $color-brand-neongreen;
+    }
+}
+
+.color-codes {
+    list-style: none;
+    margin: 0;
+
+    li {
+        display: block;
+        margin: 0 0 .25em;
+    }
+}

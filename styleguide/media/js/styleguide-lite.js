@@ -1,8 +1,8 @@
 (function() {
     var documentElement = document.documentElement;
-    var $nav = $('.nav-main');
+    var $nav = $('.mds-nav-main');
     var $nestedLists = $('ul', $nav);
-    var $accordionHeaders = $('.moz-accordion-header', $nav);
+    var $accordionHeaders = $('.mds-accordion-header', $nav);
     var $activeNavLink = $('a[href="' + window.location.href + '"]');
 
     // Add class to reflect javascript availability for CSS

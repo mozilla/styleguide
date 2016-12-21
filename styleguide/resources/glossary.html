@@ -1,0 +1,110 @@
+#html-include=styleguide/includes/header.html
+
+<h2 class="mds-page-title">Glossary of Terms</h2>
+<p>In any discussion of design systems there will be a certain amount of insider jargon.
+  The term “design system” is itself a bit of insider jargon. Here we’ll try to set definitions
+  of common terms so we can all refer to things by the same names.</p>
+
+<dl>
+  <dt>Design System</dt>
+  <dd>
+    <p>A design system comprises the entirety of guidelines, assets, and resources
+      for producing websites in a specific style or brand identity. It includes a style
+      guide, a pattern library of examples, and the actual assets – fonts, graphics,
+      CSS frameworks, JavaScript libraries – needed to create websites.</p>
+  </dd>
+
+  <dt>Style guide</dt>
+  <dd>
+    <p>A set of guidelines for creating media in a particular style. This
+      includes brand elements, color palette, typography, and copywriting.</p>
+  </dd>
+  <dd>
+    <p>A style guide can also refer to a set of standards for formatting code.</p>
+  </dd>
+
+  <dt>Design Pattern</dt>
+  <dd>
+    <p>In software engineering, a design pattern is a general reusable solution to
+      a commonly occurring problem. In the context of front-end web development, a
+      design pattern can take the form of a reusable bundle of markup and CSS that
+      establishes a template for structuring and styling commonly occuring types of
+      content.</p>
+    <p>For example, a website might have lots of forms. There are many ways to
+      structure a form in HTML and style it with CSS, but within a complex system
+      it can be beneficial to establish a design pattern for forms to ensure consistency
+      and relieve developers of solving the same problem over and over for every
+      new form they create.</p>
+  </dd>
+
+  <dt>Pattern Library</dt>
+  <dd>
+    <p>A collection of common design patterns. These are reusable snippets of HTML, CSS,
+      and JavaScript, visual examples for reference, and documentation about how to
+      use them.</p>
+  </dd>
+
+  <dt>Atomic Design</dt>
+  <dd>
+    <p>As coined by <a href="http://atomicdesign.bradfrost.com/table-of-contents/">Brad Frost</a>,
+      ”atomic design is a methodology for creating design systems.” It consists of
+      breaking a web page down into its smallest component parts, which can then be
+      combined and assembled in different configurations, adding more parts in increasing
+      complexity to arrive at the complete page.</p>
+    <p>In keeping with the “atomic” metaphor, Brad names these collections of parts
+      “atoms, molecules, organisms, templates, and pages.” We find the methodology sound
+      but some of the metaphorical terms may be a little too clever for their own good,
+      so we refer to the same concepts by slightly more boring names: elements, components,
+      and modules. Templates and pages are already good words so we’ll just swipe them.</p>
+  </dd>
+
+  <dt>Element</dt>
+  <dd>
+    <p>Analogous to “atoms” in atomic design terms, elements are the smallest part of
+      a web page, corresponding to a single HTML element. A single link, a single heading,
+      a single button, and so on.</p>
+  </dd>
+
+  <dt>Component</dt>
+  <dd>
+    <p>A small assemblage of elements that, combined, form a basic functional piece of
+      an interface. This might be a heading with a paragraph, a heading with an image
+      and a link, a link with an icon, a form field with a label, a form field with a
+      label and a button, etc. Single elements by themselves rarely do much, but a few
+      elements combined can serve a more meaningful purpose. Components are analagous
+      to “molecules” in the atomic design parlance.</p>
+  </dd>
+
+  <dt>Module</dt>
+  <dd>
+    <p>This a complete and distinct chunk of the interface that should be able to stand
+      on its own and function independently in any template. These are the building blocks
+      of a web page. Atomic design refers to these as “organisms.” Examples:</p>
+    <ul class="prose">
+      <li>A page intro with headline, subheading, hero image, and call to action link.</li>
+      <li>A signup form with headline, several form fields with labels, and a submit button.</li>
+      <li>A brand masthead with logo, tagline, and navigation.</li>
+      <li>A footer with navigation links, copyright info, and a language selector.</li>
+    </ul>
+  </dd>
+
+  <dt>Template</dt>
+  <dd>
+    <p>An arrangement of modules that form a complete web page. The template is the
+      skeleton supporting the final, polished page, so it doesn't necesarily include final
+      content or visual design. Different pages may share a common template with the same
+      basic structure but with different modules, content, and presentation.</p>
+  </dd>
+
+  <dt>Page</dt>
+  <dd>
+    <p>A web page is a page on the web, even though ”page” is mostly a useful metaphor.
+      Where a “template” is the modular structure under a page, when we refer to the
+      page as a whole we’re talking about the complete experience: structure, content,
+      design, imagery, and behavior. A page is built upon a template composed of modules
+      made up of components assembled from elements.</p>
+  </dd>
+
+</dl>
+
+#html-include=styleguide/includes/footer.html
