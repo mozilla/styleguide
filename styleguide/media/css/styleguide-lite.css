@@ -91,7 +91,50 @@ body {
     display: inline-block;
     padding: 20px;
     width: 70%;
+    font-size: 1.1rem;
+    font-weight: 300;
     vertical-align: top;
+}
+
+.sg-page-heading {
+    font-size: 3rem;
+}
+
+.sg-content-section {
+    margin-top: 40px;
+}
+
+.sg-asset-download {
+    font-size: 1.1rem;
+}
+
+.sg-asset-download li {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.sg-asset-download a:link,
+.sg-asset-download a:visited {
+    display: block;
+    color: #333;
+    padding: 5px 20px 2px;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+
+.sg-asset-download a:hover,
+.sg-asset-download a:focus {
+    display: block;
+    background-color: #333;
+    color: #fff;
+}
+
+.sg-footnote small {
+    font-size: .9rem;
+}
+
+.styleguide .main-content img {
+    margin: 20px 0;
 }
 
 .styleguide .main-content:focus {
