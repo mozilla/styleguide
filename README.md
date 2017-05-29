@@ -13,7 +13,7 @@ git clone git@github.com:yourusername/styleguide.git
 Once this is complete, you need to install some dependecies. Change directory into your newly created project folder. Run the following command from your terminal.
 
 NOTE: You will need Nodejs installed. If you do not have it already, head over to the
-[Nodejs](https://www.nodejs.org/) website, download, and run the installer.
+[Node.js](https://www.nodejs.org/) website, download, and run the installer.
 
 ``` bash
 npm install
@@ -71,7 +71,7 @@ From here on, any changes you make to files inside the `media` and `styleguide` 
 
 To stop the server, and watch service, simply press Ctrl + C in the terminal.
 
-## Code exmaples
+## Code examples
 
 To add code samples to a page, you can simply follow the following template:
 
