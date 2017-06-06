@@ -1,6 +1,6 @@
 {
   "name": "Mozilla-Styleguide",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A style guide for Mozilla branded websites",
   "scripts": {
     "test": "",
@@ -16,10 +16,12 @@
   "dependencies": {},
   "devDependencies": {
     "gh-pages": "^1.0.0",
-    "html-compiler": "0.1.2",
+    "html-compiler": "0.1.3",
     "http-server": "0.8.x",
     "npm-run-all": "^1.5.1",
     "watch": "^0.17.1"
   },
-  "engine": "node >= 0.12.x"
+  "engines": {
+      "node": ">= 0.12.x"
+  }
 }
