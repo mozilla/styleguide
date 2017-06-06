@@ -1,6 +1,6 @@
 {
   "name": "Mozilla-Styleguide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A style guide for Mozilla branded websites",
   "scripts": {
     "test": "",
@@ -15,8 +15,8 @@
   "license": "MPL-2.0",
   "dependencies": {},
   "devDependencies": {
-    "gh-pages": "^0.10.0",
-    "html-compiler": "0.0.9",
+    "gh-pages": "^1.0.0",
+    "html-compiler": "0.1.1",
     "http-server": "0.8.x",
     "npm-run-all": "^1.5.1",
     "watch": "^0.17.1"
