@@ -1,0 +1,13 @@
+#!/bin/sh -e
+# Uploads generated pages to gh-pages branch. Thx @erikrose and @pmac
+
+cd dist
+git init
+git config user.name "schalkneethling"
+git config user.email "sneethling@mozilla.com"
+git checkout -b gh-pages
+git add .
+git commit -m "Deploying latest styleguide"
+git remote add mozilla "https://$GITHUB_TOKEN@github.com/mozilla/styleguide.git"
+# Eat output so it doesn't spit out the sensitive GH_TOKEN if something goes wrong:
+git push -q -f mozilla gh-pages > /dev/null 2>&1

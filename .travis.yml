@@ -7,8 +7,11 @@ branches:
 script:
 - npm run deploy
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  provider: script
+  script: ./travis-deploy-pages
   on:
     branch: master
+  skip_cleanup: true
+env:
+  global:
+    secure: RTYdUrLshTm7dpt1QA3eJj+bTGXLJZG9kSs+Ulpq8uQ3w3K1FVfBAHBekOr/h47vx7I4GutobZGrppub3PZ8wZbBCjaXLcsI8H4I9Z1KIvFngEJ5EfkLztqabuYyqvW6Ww0CiZuNAOiHI2An4FcjN5VrZm/WGYWSQnZB6A1v3DJqUA7yPrnd0f5q2gs6gehE49H+/cv8OlnTBUP9FY3bzEZBdAZFYy1trpqCWgBDNf8alv0RdfKXT6SDRUm9NcNXZ0maIcXRnlgWlaOoA2SCaT7Vb7BXGKmWynbJmB1mVBUMsEcVU6AVm0bIqrwmFKdHtQPRTCmWPdZ8lAL8vEcxQu/7skYAlSSCkB2NlBUtx/aCxDQu6shXc4eyGlAFbcZyTn6vUmb8+0lzvOigaDfXUKqCATcvgYOAZp4VTY9CrAZmQzKpIiNFxcOH7xJakXhP4QO3qlxtHcgOKZT1jdCmGUeM9bERtz/7nb8NvXBbgvuwsfnC8iU0d9lsNSiqze35vjytECWuu7V9YJrZZ9GO5cM2dgTxDv1O+zCkWehLSdPDJwrCYaN4tqCADuPFmT5KJWS36VdTR0gobRGA/8+vJUrn56OXxwXGkH0Qz73DnbiOFT1NnznVOhbZWpAuTP+PDeos0zMjmvz7NyTmWQoKxwBY5MIkMRsOR5CI2tbuACE=
