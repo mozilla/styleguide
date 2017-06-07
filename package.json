@@ -5,7 +5,7 @@
   "scripts": {
     "test": "",
     "build-local": "html-compiler --rootFolder=styleguide --siteRoot=http://127.0.0.1:8080/dist --dest=dist",
-    "deploy": "html-compiler --rootFolder=styleguide --siteRoot=https://mozilla.github.io/styleguide --dest=dist && gh-pages -d dist",
+    "deploy": "html-compiler --rootFolder=styleguide --siteRoot=https://mozilla.github.io/styleguide --dest=dist",
     "start-watch": "watch 'npm run build-local' styleguide",
     "start-server": "http-server -o",
     "start": "npm-run-all --parallel start-watch start-server"
