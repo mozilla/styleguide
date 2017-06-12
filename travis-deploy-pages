@@ -8,6 +8,6 @@ git config user.email "sneethling@mozilla.com"
 git checkout -b gh-pages
 git add .
 git commit -m "Deploying latest styleguide"
-git remote add mozilla "https://$GH_TOKEN@github.com/mozilla/styleguide.git"
+git remote add mozilla "https://$GITHUB_TOKEN@github.com/mozilla/styleguide.git"
 # Eat output so it doesn't spit out the sensitive GH_TOKEN if something goes wrong:
 git push -q -f mozilla gh-pages > /dev/null 2>&1
