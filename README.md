@@ -1,5 +1,7 @@
 # styleguide
 
+[![Build Status](https://travis-ci.org/mozilla/styleguide.svg?branch=master)](https://travis-ci.org/mozilla/styleguide)
+
 A style guide for Mozilla branded websites
 
 ## Getting started
