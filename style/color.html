@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://mozilla.github.io/styleguide/media/img/favicon.png">
+    <link rel="shortcut icon" href="https://mozilla.github.io/styleguide/media/img/favicon.ico">
+
+    <title>Mozilla Design System</title>
+
+    <link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/mds-base.css" media="screen">
+<link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/libs/prism.css" media="screen">
+<link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/pebbles/global.css" media="screen">
+
+  </head>
+
+  <body class="mds-body">
+    <header class="mds-main-header">
+      <h1 class="mds-site-title">
+        <img src="https://mozilla.github.io/styleguide/media/img/pebbles/mozilla-wordmark-black.svg" alt="Mozilla" width="100" height="32"> Design System
+      </h1>
+    </header>
+
+    <nav class="mds-nav-main" role="navigation">
+  <header>
+    <h2>Main Navigation</h2>
+  </header>
+
+  <ol>
+    <li><a href="https://mozilla.github.io/styleguide/index.html">Home</a></li>
+    <li id="style" class="mds-accordion-header"><a href="#style">Style</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/style/color.html">Color</a></li>
+      </ul>
+    </li>
+    <li id="elements" class="mds-accordion-header"><a href="#elements">Elements</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/elements/buttons.html">Buttons</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/elements/headings.html">Headings</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/elements/tables-and-lists.html">Tables and Lists</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/elements/forms.html">Forms</a></li>
+      </ul>
+    </li>
+    <li id="resources" class="mds-accordion-header"><a href="#resources">Resources</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/resources/glossary.html">Glossary</a></li>
+      </ul>
+    </li>
+  </ol>
+</nav>
+
+
+    <main class="mds-main-content" role="main">
+
+
+<h2 class="mds-page-title">Color Palette</h2>
+
+<h3>Main colors</h3>
+<p>Our main brand colors are black and white. This illustrates our
+  gutsy personality and provides a bold aesthetic to our brand.</p>
+
+<ul class="color-swatches">
+  <li class="swatch">
+    <div class="color black"></div>
+  </li>
+  <li class="swatch">
+    <div class="color white"></div>
+  </li>
+</ul>
+
+<h3>Secondary colors</h3>
+<p>Our secondary palette is made up of 9 colors — 6 pastels and 3
+  neons. These colors are used interchangeably to provide contrast
+  and brightness to our bold black and white main color scheme.</p>
+
+<ul class="color-swatches">
+  <li class="swatch">
+    <h4>Cyan</h4>
+    <div class="color color-brand-cyan"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#4eb5e6</code>
+      </li>
+      <li>
+        <code>rgb(78, 181, 230)</code>
+      </li>
+      <li>
+        <code>hsl(199, 75, 60)</code>
+      </li>
+      <li>
+        <code>C61% M11% Y1% K0%</code>
+      </li>
+    </ul>
+  </li>
+
+  <li class="swatch">
+    <h4>Coral</h4>
+    <div class="color color-brand-coral"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#ff8385</code>
+      </li>
+      <li>
+        <code>rgb(255, 131, 133)</code>
+      </li>
+      <li>
+        <code>hsl(359, 100, 76)</code>
+      </li>
+      <li>
+        <code>C0% M62% Y35% K0%</code>
+      </li>
+    </ul>
+  </li>
+
+  <li class="swatch">
+    <h4>Yellow</h4>
+    <div class="color color-brand-yellow"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#ffed00</code>
+      </li>
+      <li>
+        <code>rgb(255, 237, 0)</code>
+      </li>
+      <li>
+        <code>hsl(56, 100, 50)</code>
+      </li>
+      <li>
+        <code>C3% M1% Y97% K0%</code>
+      </li>
+    </ul>
+  </li>
+
+  <li class="swatch">
+    <h4>Lilac</h4>
+    <div class="color color-brand-lilac"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#b0b2e9</code>
+      </li>
+      <li>
+        <code>rgb(176, 178, 233)</code>
+      </li>
+      <li>
+        <code>hsl(238, 56, 80)</code>
+      </li>
+      <li>
+        <code>C29% M27% Y0% K0%</code>
+      </li>
+    </ul>
+  </li>
+
+  <li class="swatch">
+    <h4>Orange</h4>
+    <div class="color color-brand-orange"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#faba00</code>
+      </li>
+      <li>
+        <code>rgb(250, 186, 0)</code>
+      </li>
+      <li>
+        <code>hsl(45, 100, 49)</code>
+      </li>
+      <li>
+        <code>C2% M29% Y100% K0%</code>
+      </li>
+    </ul>
+  </li>
+
+  <li class="swatch">
+    <h4>Lime</h4>
+    <div class="color color-brand-lime"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#b6d806</code>
+      </li>
+      <li>
+        <code>rgb(182, 216, 6)</code>
+      </li>
+      <li>
+        <code>hsl(70, 95, 44)</code>
+      </li>
+      <li>
+        <code>C34% M0% Y100% K0%</code>
+      </li>
+    </ul>
+  </li>
+
+  <li class="swatch">
+    <h4>Neon blue</h4>
+    <div class="color color-brand-neonblue"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#00ffff</code>
+      </li>
+      <li>
+        <code>rgb(0, 255, 255)</code>
+      </li>
+      <li>
+        <code>hsl(180, 100, 50)</code>
+      </li>
+    </ul>
+  </li>
+
+  <li class="swatch">
+    <h4>Neon pink</h4>
+    <div class="color color-brand-neonpink"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#fa8cff</code>
+      </li>
+      <li>
+        <code>rgb(250, 140, 255)</code>
+      </li>
+      <li>
+        <code>hsl(297, 100, 77)</code>
+      </li>
+    </ul>
+  </li>
+
+  <li class="swatch">
+    <h4>Neon green</h4>
+    <div class="color color-brand-neongreen"></div>
+    <ul class="color-codes">
+      <li>
+        <code>#abff10</code>
+      </li>
+      <li>
+        <code>rgb(171, 255, 16)</code>
+      </li>
+      <li>
+        <code>hsl(81, 100, 53)</code>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+    </main>
+
+    <footer class="mds-footer">
+      <div class="mds-footer-logo">
+        <a href="https://www.mozilla.org"><img src="https://mozilla.github.io/styleguide/media/img/pebbles/mozilla-wordmark-white.svg" alt="Mozilla" width="100" height="32"></a>
+      </div>
+
+      <div class="mds-footer-license">
+        <p>Portions of this content are &copy;1998–2016 by individual mozilla.org contributors. Content available under a <a href="https://www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>.</p>
+      </div>
+
+      <ul class="mds-footer-nav">
+        <li><a href="https://github.com/mozilla/styleguide">Contribute on Github</a></li>
+        <li><a href="https://www.mozilla.org/contact/">Contact Us</a></li>
+        <li><a href="https://www.mozilla.org/privacy/">Privacy Policy</a></li>
+      </ul>
+    </footer>
+    <script src="https://mozilla.github.io/styleguide/media/js/libs/jquery.js"></script>
+<script src="https://mozilla.github.io/styleguide/media/js/libs/prism.js" data-manual></script>
+<script src="https://mozilla.github.io/styleguide/media/js/styleguide-lite.js"></script>
+
+  </body>
+</html>
+

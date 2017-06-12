@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://mozilla.github.io/styleguide/media/img/favicon.png">
+    <link rel="shortcut icon" href="https://mozilla.github.io/styleguide/media/img/favicon.ico">
+
+    <title>Mozilla Design System</title>
+
+    <link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/mds-base.css" media="screen">
+<link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/libs/prism.css" media="screen">
+<link rel="stylesheet" href="https://mozilla.github.io/styleguide/media/css/pebbles/global.css" media="screen">
+
+  </head>
+
+  <body class="mds-body">
+    <header class="mds-main-header">
+      <h1 class="mds-site-title">
+        <img src="https://mozilla.github.io/styleguide/media/img/pebbles/mozilla-wordmark-black.svg" alt="Mozilla" width="100" height="32"> Design System
+      </h1>
+    </header>
+
+    <nav class="mds-nav-main" role="navigation">
+  <header>
+    <h2>Main Navigation</h2>
+  </header>
+
+  <ol>
+    <li><a href="https://mozilla.github.io/styleguide/index.html">Home</a></li>
+    <li id="style" class="mds-accordion-header"><a href="#style">Style</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/style/color.html">Color</a></li>
+      </ul>
+    </li>
+    <li id="elements" class="mds-accordion-header"><a href="#elements">Elements</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/elements/buttons.html">Buttons</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/elements/headings.html">Headings</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/elements/tables-and-lists.html">Tables and Lists</a></li>
+        <li><a href="https://mozilla.github.io/styleguide/elements/forms.html">Forms</a></li>
+      </ul>
+    </li>
+    <li id="resources" class="mds-accordion-header"><a href="#resources">Resources</a>
+      <ul>
+        <li><a href="https://mozilla.github.io/styleguide/resources/glossary.html">Glossary</a></li>
+      </ul>
+    </li>
+  </ol>
+</nav>
+
+
+    <main class="mds-main-content" role="main">
+
+
+<h2 class="page-title">Tables and Lists</h2>
+
+<section class="mds-component">
+  <h3>Tables</h3>
+  <p>Tables have no base styling (apart from the browser defaults). Use the <code>.data-table</code> class to display tabular data with a bit more polish.</p>
+
+  <div class="mds-sample-container">
+    <table class="data-table">
+      <caption>Table caption</caption>
+      <thead>
+        <tr>
+          <td></td>
+          <th scope="col">Column</th>
+          <th scope="col">Column</th>
+          <th scope="col">Column</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Row</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+        <tr>
+          <th scope="row">Row</th>
+          <td>Cell</td>
+          <td>Cell</td>
+          <td>Cell</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <aside class="mds-code-sample show">
+    <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;table class="data-table">
+  &lt;caption>Table caption&lt;/caption>
+  &lt;thead>
+    &lt;tr>
+      &lt;td>&lt;/td>
+      &lt;th scope="col">Column&lt;/th>
+      &lt;th scope="col">Column&lt;/th>
+      &lt;th scope="col">Column&lt;/th>
+    &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+    &lt;tr>
+      &lt;th scope="row">Row&lt;/th>
+      &lt;td>Cell&lt;/td>
+      &lt;td>Cell&lt;/td>
+      &lt;td>Cell&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;th scope="row">Row&lt;/th>
+      &lt;td>Cell&lt;/td>
+      &lt;td>Cell&lt;/td>
+      &lt;td>Cell&lt;/td>
+    &lt;/tr>
+  &lt;/tbody>
+&lt;/table>
+</code>
+</pre>
+  </aside>
+</section>
+
+<section class="mds-component">
+  <h3>Unordered lists</h3>
+  <p>We most frequently use lists for semantic structure and don't actually want to display them as lists. It's simpler to reset lists globally and only display them as lists in text when needed with the <code>.prose</code> class.</p>
+
+  <div class="mds-sample-container">
+    <ul class="prose">
+      <li>list item</li>
+      <li>list item
+        <ul class="prose">
+          <li>nested list</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <aside class="mds-code-sample show">
+    <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;ul class="prose">
+  &lt;li>list item&lt;/li>
+  &lt;li>list item
+    &lt;ul class="prose">
+      &lt;li>nested list&lt;/li>
+    &lt;/ul>
+  &lt;/li>
+&lt;/ul>
+</code>
+</pre>
+  </aside>
+</section>
+
+<section class="mds-component">
+  <h3>Ordered lists</h3>
+  <p>We most frequently use lists for semantic structure and don't actually want to display them as lists. It's simpler to reset lists globally and only display them as lists in text when needed with the <code>.prose</code> class.</p>
+
+  <div class="mds-sample-container">
+    <ol class="prose">
+      <li>list item</li>
+      <li>list item
+        <ol class="prose">
+          <li>nested list</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+
+  <aside class="mds-code-sample show">
+    <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;ol class="prose">
+  &lt;li>list item&lt;/li>
+  &lt;li>list item
+    &lt;ol class="prose">
+      &lt;li>nested list&lt;/li>
+    &lt;/ol>
+  &lt;/li>
+&lt;/ol>
+</code>
+</pre>
+  </aside>
+</section>
+
+
+<section class="mds-component">
+  <h3>Definition lists</h3>
+
+  <div class="mds-sample-container">
+    <dl>
+      <dt>Term</dt>
+      <dd>Description</dd>
+    </dl>
+  </div>
+
+  <aside class="mds-code-sample show">
+    <h4>HTML</h4>
+<pre>
+<code class="language-markup">
+&lt;dl>
+  &lt;dt>Term&lt;/dt>
+  &lt;dd><p>Description</p>&lt;/dd>
+&lt;/dl>
+</code>
+</pre>
+  </aside>
+</section>
+
+    </main>
+
+    <footer class="mds-footer">
+      <div class="mds-footer-logo">
+        <a href="https://www.mozilla.org"><img src="https://mozilla.github.io/styleguide/media/img/pebbles/mozilla-wordmark-white.svg" alt="Mozilla" width="100" height="32"></a>
+      </div>
+
+      <div class="mds-footer-license">
+        <p>Portions of this content are &copy;1998–2016 by individual mozilla.org contributors. Content available under a <a href="https://www.mozilla.org/foundation/licensing/website-content.html">Creative Commons license</a>.</p>
+      </div>
+
+      <ul class="mds-footer-nav">
+        <li><a href="https://github.com/mozilla/styleguide">Contribute on Github</a></li>
+        <li><a href="https://www.mozilla.org/contact/">Contact Us</a></li>
+        <li><a href="https://www.mozilla.org/privacy/">Privacy Policy</a></li>
+      </ul>
+    </footer>
+    <script src="https://mozilla.github.io/styleguide/media/js/libs/jquery.js"></script>
+<script src="https://mozilla.github.io/styleguide/media/js/libs/prism.js" data-manual></script>
+<script src="https://mozilla.github.io/styleguide/media/js/styleguide-lite.js"></script>
+
+  </body>
+</html>
+
