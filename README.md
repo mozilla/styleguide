@@ -1,3 +1,5 @@
+**DEPRECATED:** This project has been shuttered in favor of the [Protocol design system](https://protocol.mozilla.org) ([also on github](https://github.com/mozilla/protocol/)).
+
 # styleguide
 
 [![Build Status](https://travis-ci.org/mozilla/styleguide.svg?branch=master)](https://travis-ci.org/mozilla/styleguide)
